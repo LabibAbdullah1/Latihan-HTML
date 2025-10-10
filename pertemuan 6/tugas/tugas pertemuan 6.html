@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style tugas 6.css">
+  <title>Tugas pertemuan 6</title>
+</head>
+
+<body>
+  <!-- header start -->
+  <header>
+    <h1>Survey of research on confidential computing</h1>
+  </header>
+  <!-- header finis -->
+
+  <!-- konten utama start -->
+  <div class="main-content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQambvF85_J5W-shOXNQu67fp7povBP5-LluQ&s"
+      alt="Gambar Thedevelopmenthistoryof confidential computing." class="article-image">
+    <p class="prg-first"> With the development and application of new information
+      technologies such as cloud computing, big data, and artificial
+      intelligence, data security and privacy protection has become an
+      urgent and crucial issue. With more and more tenants (including
+      individuals, enterprises, and government organizations) deploy
+      ing important data and critical applications to the cloud, trust
+      in cloud service providers has become an emergent security
+      issue. While there are many mature security mechanisms for
+      data at rest or in transit in the cloud computing, protecting
+      data in use will face the significant technical challenge and
+      is an open problem. Confidential computing is an innovative
+      security technology that has been introduced to address this
+      issue</p>
+    <p> fidential computing has become a popular technology area
+      driven by both government policy and industry. Both in the
+      technologies and products, confidential computing is also in
+      a rapid growth stage. According to the ‘Privacy Computing
+      White Paper’ released by the Privacy Computing Alliance in
+      2022, it is anticipated that confidential computing and
+      privacy protection technologies will be commercialized in a
+      large scale in the next 5 to 10 years. The report also predicts
+      that by 2025, over 60% of large organizations will use one
+      or more privacy protection technologies in scenarios such as
+      data analysis, business intelligence, or cloud computing. Cur
+      rently, confidential computing applications are already involved
+      in industries such as finance, communication, government,
+      and healthcare. Notably, major global IT companies have
+      invested in the direction of confidential computing technology,
+      and released a number of significant application achieve
+      ments, such as Microsoft Azure Confidential Computing,
+      Google Cloud’s GKE, Alibaba Cloud’s ECS, Ant Finan
+      cial’s Occlum and KubeTEE, Huawei’s Kunpeng BoostKit,
+      and so on.</p>
+  </div>
+  <!-- konten utama finish -->
+
+  <!-- kontent ke dua start -->
+  <aside class="sidebar">
+    <h3>Application framework</h3>
+    <!-- membuat list dengan berurut angka -->
+    <ol>
+      <li>Data owner</li>
+      <p> This entity is responsible for storing, man
+        aging, and controlling large amounts of sensitive data, and
+        has absolute ownership over the data. They determine
+        who can access the data, which typically contains sensi
+        tive information that must not be leaked,tampered with, or
+        used unlawfully</p>
+      <li>Code owner</li>
+      <p>Thisentitycreatesprograms,algorithms, mod
+        els, and other code for accessing, computing, and analysing.
+        They typically have strong research and development capa
+        bilities but lack actual data. They usually hope to gain as
+        much access to data as possible, while hoping that their code
+        is not illegally tampered with or destroyed.</p>
+      <li> Platform owner</li>
+      <p> This entity combines hardware (sourced
+        from hardware suppliers such as CPU manufacturers, server
+        manufacturers, and so on), system software (including OS
+        and hypervisor suppliers), and critical services (such as cloud
+        middleware suppliers). They construct a cloud environment
+        and establish a confidential computing platform to provide
+        confidential computing functions and services to external
+        entities.</p>
+      <li> Consumer</li>
+      <p>This entity has actual demand for the confi
+        dential computing platform and services. They rely on data
+        provided by data owners and code provided by code authors,
+        and use the managementfunctions andsoftware provided by
+        platform owners to complete their confidential computing
+        needs</p>
+    </ol>
+  </aside>
+  <!-- kontent ke dua finish -->
+
+  <!-- footer start -->
+  <footer>
+    <p>&copy; 2025 copyright | creator web <span>Labib Abdullah</span></p>
+  </footer>
+  <!-- footer finish -->
+
+  <!-- tombol untuk kembali ke atas -->
+  <button id="backToTopBtn" title="Kembali ke Atas">&#9650;</button>
+
+  <!-- java script start -->
+  <script>
+    // Dapatkan tombol kembali ke atas
+    let backToTopBtn = document.getElementById("backToTopBtn");
+
+    // Ketika pengguna menggulir ke bawah, tampilkan tombol
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    //fungsi scrool 
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        backToTopBtn.style.display = "block"; // Tampilkan tombol
+      } else {
+        backToTopBtn.style.display = "none"; // Sembunyikan tombol
+      }
+    }
+
+    // Ketika pengguna mengklik tombol, gulirkan dokumen ke atas
+    backToTopBtn.addEventListener("click", function () {
+      document.body.scrollTop = 0; // Untuk Safari
+      document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE dan Opera
+    });
+  </script>
+  <!-- java script finish -->
+</body>
+
+</html>

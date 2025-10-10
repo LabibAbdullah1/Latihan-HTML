@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding-top: 60px;
+  font-family: 'poppins';
+  background-color: rgb(156, 253, 156);
+}
+
+.box-example {
+  width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  color: #333;
+  text-align: center;
+  line-height: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 5px solid rgb(0, 71, 143);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.box-parent {
+  background-color: #d49a9a;
+  padding: 10px;
+  width: max-content;
+}
+
+.box-example:hover {
+  cursor: pointer;
+  color: white;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+}
+
+.static-box {
+  width: 150px;
+  height: 70px;
+  background-color: lightcoral;
+  text-align: center;
+  line-height: 70px;
+  justify-items: center;
+  padding: 10px;
+  border: 1px solid lightblue;
+
+  margin: 10px;
+  /* Properti ini tidak akan berpengaruh pada posisi */
+  position: static;
+  /* Bisa dihilangkan karena ini default */
+  top: 20px;
+  /* Ini tidak akan bekerja! */
+  left: 30px;
+  /* Ini juga tidak akan bekerja! */
+}
+
+.relative-box {
+  width: 150px;
+  height: 70px;
+  background-color: lightgreen;
+  border: 1px solid darkgreen;
+  margin: 10px;
+  position: relative;
+  /* Kunci di sini! */
+  top: 20px;
+  /* Geser 20px ke bawah dari posisi normalnya */
+  left: 30px;
+  /* Geser 30px ke kanan dari posisi normalnya */
+}
+
+.another-box {
+  width: 150px;
+  height: 70px;
+  background-color: lightblue;
+  border: 1px solid blue;
+  margin: 10px;
+}
+
+.parent-box {
+  width: 300px;
+  height: 200px;
+  background-color: #e0e0e0;
+  /* Light Gray */
+  border: 2px dashed gray;
+  margin: 40px auto;
+  /* Tengah */
+  position: relative;
+  /* Ini adalah containing block untuk child absolute! */
+}
+
+.absolute-child {
+  width: 80px;
+  height: 80px;
+  background-color: #ffcc00;
+  /* Yellow */
+  border: 1px solid orange;
+  position: absolute;
+  /* Kunci di sini! */
+  top: 10px;
+  /* 10px dari atas parent-box */
+  right: 10px;
+  /* 10px dari kanan parent-box */
+}
+
+.normal-sibling {
+  width: 100px;
+  height: 50px;
+  background-color: #ff99ff;
+  /* Pink */
+  margin-top: 10px;
+}
+
+.fixed-header {
+  width: 100%;
+  height: 50px;
+  background-color: #4a4a4a;
+  /* Dark Gray */
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  /* Kunci di sini! */
+  top: 0;
+  /* Menempel di bagian atas viewport */
+  left: 0;
+  /* Menempel di bagian kiri viewport */
+  z-index: 1000;
+  /* Pastikan di atas elemen lain */
+}
+
+.scroll-content {
+  padding: 20px;
+  text-align: justify;
+  background-color: #f0f0f0;
+}

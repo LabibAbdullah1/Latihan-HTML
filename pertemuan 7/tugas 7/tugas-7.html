@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck Studyclub Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="gallery">
+    <div class="item">
+      <div class="item-image-container">
+        <img src="img/raja-ampat.jpeg" alt="Deskripsi gambar 1">
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-image-container">
+        <img src="img/laut 1.jpeg" alt="Deskripsi gambar 2">
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-image-container">
+        <img src="img/gunung1.jpeg" alt="Deskripsi gambar 3">
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-image-container">
+        <img src="img/gunung 2.jpg" alt="Deskripsi gambar 4">
+      </div>
+    </div>
+    <div class="item">
+      <div class="item-image-container">
+        <img src="img/kota1.jpg" alt="Deskripsi gambar 5">
+      </div>
+    </div>
+  </div>
+  <div id="fullscreen-overlay" onclick="closeFullScreen()">
+    <img id="fullscreen-image" src="" alt="">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const images = document.querySelectorAll('.gallery img');
+      const overlay = document.getElementById('fullscreen-overlay');
+      const fullscreenImage = document.getElementById('fullscreen-image');
+
+      // Menambahkan event listener untuk setiap gambar di galeri
+      images.forEach(image => {
+        image.addEventListener('click', function () {
+          fullscreenImage.src = this.src;
+          overlay.style.display = 'flex';
+        });
+      });
+
+      // Menambahkan event listener untuk menutup overlay saat diklik
+      overlay.addEventListener('click', function () {
+        overlay.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+
+</html>

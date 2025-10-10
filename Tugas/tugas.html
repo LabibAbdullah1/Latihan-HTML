@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tugas HTML</title>
+  </head>
+  <body>
+    <h2>Kegiatan Sekolah</h2>
+    <h4>kegiatan Ekstrakulikuler</h4>
+    <ul>
+      <li>Pramuka</li>
+      <li>Drumband</li>
+      <li>Sepak Bola</li>
+    </ul>
+    <h4>langkah-langkah pendaftaran</h4>
+    <ol>
+      <li>download formulir pendaftaran</li>
+      <li>isi formulir pendaftaran</li>
+      <li>kirim formulir</li>
+      <li>konfirasi pendaftaran</li>
+    </ol>
+    <h4>jadwal kegiatan</h4>
+    <table border="1">
+      <tr>
+        <th>Nama kegiatan</th>
+        <th>Hari</th>
+        <th>Jam</th>
+      </tr>
+      <tr>
+        <td>Pramuka</td>
+        <td>Sabtu dan Minggu</td>
+        <td>09.00 wib</td>
+      </tr>
+
+      <tr>
+        <td>Drumband</td>
+        <td>sabtu dan Minggu</td>
+        <td>14.00 wib</td>
+      </tr>
+      <tr>
+        <td>Sepak bola</td>
+        <td>Sabtu dan Minggu</td>
+        <td>15.00 wib</td>
+      </tr>
+    </table>
+    <h4>from pendaftaran</h4>
+    <table>
+      <form action="proses.php" method="post">
+        <tr>
+          <td><label for="">Nama Siswa</label></td>
+          <td>:</td>
+          <td><input type="text" placeholder="Nama" /></td>
+        </tr>
+        <tr>
+          <td><label for="">NIS </label></td>
+          <td>:</td>
+          <td><input type="text" placeholder="NIS" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Pilih Kegiatan</label></td>
+          <td>:</td>
+
+          <td>
+            <select name="kegiatan" id="" aria-placeholder="">
+              <option value="Pramuka">Pramuka</option>
+              <option value="Drumband">Drumband</option>
+              <option value="Sepak Bola">Sepak Bola</option>
+            </select>
+          </td>
+        </tr>
+        <br />
+        <tr>
+          <td><label for="">Pilih hari</label></td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="pilih" value="1" />sabtu
+            <input type="radio" name="pilih" value="2" />Minggu<br />
+          </td>
+        </tr>
+        <tr>
+          <td><button type="submit">kirim</button></td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

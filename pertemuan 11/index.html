@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- style css dan javascrip -->
+   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+   <link type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js">
+
+   <!-- title -->
+   <title>Latihan Pertemuan 11</title>
+</head>
+
+<body>
+   <div class="container w-50 mt-5">
+      <!-- form  -->
+      <form action="">
+
+         <!-- input email -->
+         <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="text" class="form-control" name="inputEmail" id="inputEmail" placeholder="email@example.com"
+               required />
+         </div>
+
+         <!-- input password -->
+         <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <div class="input-group">
+               <input type="password" class="form-control" id="inputPassword" placeholder="Masukkan Password" required>
+               <button class="btn btn-primary" type="button" id="togglePassword">
+                  <i class="bi bi-toggle2-off" id="toggleIcon"></i>
+               </button>
+            </div>
+         </div>
+
+         <!-- text area -->
+         <div class="mb-3">
+            <label for="textArea">Text Area</label>
+            <textarea name="textArea" id="textArea" rows="10" class="form-control"></textarea>
+         </div>
+
+         <!-- select -->
+         <div class="mb-3">
+            <label for="inputSelect">Kategori</label>
+            <select name="inputSelect" id="inputSelect" class="form-select" required>
+               <option hidden>Silahkan Pilih</option>
+               <option value="Mahasiswa">Mahasiswa</option>
+               <option value="Dosen">Dosen</option>
+               <option value="Tenaga Pendidik">Tenaga Penddik</option>
+               <option value="Security">Security</option>
+            </select>
+         </div>
+
+         <!-- checked  -->
+         <div class="mb-3 ">
+            <label>Form Check</label>
+            <div class="form-check">
+               <input type="checkbox" id="checkboxDefault" class="form-check-input">
+               <label for="checkboxDefault" class="form-check-label">Checked Dafault</label>
+            </div>
+            <div class="form-check">
+               <input type="checkbox" id="checkboxChecked" class="form-check-input" checked>
+               <label for="checkboxChecked" class="form-check-label">Checked Box</label>
+            </div>
+         </div>
+
+         <!-- Radio -->
+         <div class="mb-3">
+            <label>Prodi Keahlian</label>
+            <div class="form-check">
+               <input type="radio" id="radioDefault" name="inputRadio" class="form-check-input" checked>
+               <label for="radioDefault" class="form-check-label text-warning">Teknik Informatika</label>
+            </div>
+            <div class="form-check">
+               <input type="radio" id="radioCheked" name="inputRadio" class="form-check-input">
+               <label for="radioChecked" class="form-check-label text-primary">Sistem Informasi</label>
+            </div>
+            <div class="form-check">
+               <input type="radio" id="radioCheked" name="inputRadio" class="form-check-input">
+               <label for="radioChecked" class="form-check-label text-success">Bisnis Digital</label>
+            </div>
+         </div>
+
+         <!-- tombol -->
+         <div class="mb-3">
+            <button type="submit" id="kirim" class="btn btn-primary w-100">Kirim</button>
+         </div>
+      </form>
+   </div>
+
+   <!-- script -->
+   <script>
+      const password = document.querySelector("#inputPassword");
+      const toggleIcon = document.querySelector("#toggleIcon");
+      const togglePassword = document.querySelector("#togglePassword");
+
+      togglePassword.addEventListener("click", function () {
+         const type = password.getAttribute("type") === "password" ? "text" : "password";
+         password.setAttribute("type", type);
+
+         // Ganti icon antara mata terbuka dan tertutup
+         toggleIcon.classList.toggle("bi-toggle2-off");
+         toggleIcon.classList.toggle("bi-toggle2-on");
+      });
+
+      document.getElementById('kirim').addEventListener('click', function () {
+         window.location.reload();
+         alert("pesan ada sudah terkirim")
+      });
+
+   </script>
+</body>
+
+</html>

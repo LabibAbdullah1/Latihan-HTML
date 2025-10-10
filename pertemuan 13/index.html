@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+   <title>Belajar Bootsrap modal, toltip, popover</title>
+</head>
+
+<body>
+   <div class="container mt-5">
+      <!-- Button trigger modal -->
+      <h1 class="text-center mb-5">Pop UP Bootsrap</h1>
+      <div class="row">
+         <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+         </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  Mari Belajar Web Design di Duck.SC Fasilkom Unilak | ini adalah modal biasa
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Simpan</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row mt-5">
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+         </button>
+
+         <!-- Modal -->
+         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     Mari belajar Web Design di Duck.SC Fasilkom | Ini adalah modal static
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-success" data-bs-dismiss="modal">Simpan</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row mt-5">
+         <!-- tombol triger -->
+         <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch scrollable backdrop modal
+         </button>
+
+         <!-- Modal -->
+         <div class="modal fade" id="BackdropScroll" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cum, temporibus doloribus, aut
+                     obcaecati assumenda, rem labore nihil adipisci veniam nostrum porro quas inventore optio
+                     pariatur eligendi laudantium placeat fugit eveniet est! Ratione doloremque veritatis praesentium
+                     quisquam, magnam animi excepturi nobis. Officia, quibusdam libero id tempora rerum vel! Laborum
+                     labore sint illum, atque nam illo sequi officia necessitatibus quis commodi voluptatem! Labore
+                     quisquam optio illum similique eos laborum culpa voluptatem. Officiis tenetur vitae voluptatum
+                     dolorem neque quisquam cupiditate aperiam assumenda molestiae accusamus consequatur, dolor
+                     corporis iusto. Ullam assumenda, dolor necessitatibus eaque provident molestias, quo tempore,
+                     excepturi earum quod laboriosam tempora in soluta dicta? Illum maiores unde doloremque
+                     reprehenderit aspernatur! Quo, non cumque, fuga repellat accusamus vero maxime, consequuntur
+                     inventore doloribus nostrum omnis consequatur neque voluptate fugiat? Esse incidunt maxime quo
+                     accusantium laudantium in. Rerum atque suscipit quis veniam ipsam eos odio fugit non id! Nemo ad
+                     hic eaque neque distinctio velit laboriosam porro. Fuga accusantium voluptatem tempore alias
+                     ducimus tenetur? Ex iure rem est doloribus culpa reprehenderit sapiente enim unde dolorem. Ullam
+                     dolor nihil sit eligendi nostrum perferendis reiciendis sunt omnis quasi neque. Ab qui magni
+                     officia reiciendis fuga hic expedita illo reprehenderit, impedit vitae quae ex cum ducimus
+                     voluptatibus.
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Simpan</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="row mt-5">
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#BackdropCenter">
+            Launch centered backdrop modal
+         </button>
+
+         <!-- Modal -->
+         <div class="modal fade" id="BackdropCenter" data-bs-backdrop="center" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     mari belajar Web design Di Duck.Sc Fasilkom | ini adalah sebuah modal Centered
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-info" data-bs-dismiss="modal">Simpan</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="mt-5 d-flex justify-content-between">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+               title="Tooltip on top">
+               Tooltip on top
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right"
+               title="Tooltip on right">
+               Tooltip on right
+            </button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom"
+               title="Tooltip on bottom">
+               Tooltip on bottom
+            </button>
+            <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left"
+               title="Tooltip on left">
+               Tooltip on left
+            </button>
+            <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-html="true"
+               title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+               Tooltip with HTML
+            </button>
+         </div>
+
+         <div class="mt-5 d-flex justify-content-between">
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
+               data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+               popover
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="top" data-bs-content="Top popover">
+               Popover on top
+            </button>
+            <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="right" data-bs-content="Right popover">
+               Popover on right
+            </button>
+            <button type="button" class="btn btn-warning" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="bottom" data-bs-content="Bottom popover">
+               Popover on bottom
+            </button>
+            <button type="button" class="btn btn-info" data-bs-container="body" data-bs-toggle="popover"
+               data-bs-placement="left" data-bs-content="Left popover">
+               Popover on left
+            </button>
+
+         </div>
+
+      </div>
+      <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script type="text/javascript">
+         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+         })
+         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+         })
+         var popover = new bootstrap.Popover(document.querySelector('.example-popover'), {
+            container: 'body'
+         })
+      </script>
+</body>
+
+</html>

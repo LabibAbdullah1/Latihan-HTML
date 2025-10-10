@@ -1,0 +1,43 @@
+body {
+      background-color: rgb(134, 228, 121);
+    }
+
+    #khusus {
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    #khusus:hover {
+      cursor: pointer;
+      color: orange;
+      transition: ease-out 0.2s;
+    }
+
+    .deskripsi {
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      text-align: justify;
+      font-style: obliqueS;
+    }
+
+    .deskripsi:hover {
+      cursor: pointer;
+      transition: ease-out 0.2s;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: blue;
+      text-transform: capitalize;
+      text-align: center;
+      cursor: pointer;
+      text-shadow: 2px 2px rgba(33, 0, 0, 0.309);
+    }
+
+    h2:hover {
+      transform: translateX(4px);
+      transform: translateY(2px);
+      color: rgb(0, 0, 0);
+      text-shadow: none;
+    }

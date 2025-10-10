@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-top: 50px;
+  background-color: hsl(38, 100%, 86%);
+  font-family: 'poppins', sans-serif;
+  position: relative;
+}
+
+
+header {
+  padding: 10px 3%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 0.5rem;
+  font-weight: 100;
+  text-align: center;
+  line-height: 20px;
+  height: 50px;
+  width: 100%;
+  background-color: #8c5383;
+  color: whitesmoke;
+  text-overflow: ellipsis;
+  z-index: 2;
+
+}
+
+.prg-first {
+  margin-top: 170px;
+}
+
+.main-content {
+  text-indent: 40px;
+  position: relative;
+  width: 80%;
+  height: max-content;
+  padding: 10px 15px;
+  margin: 50px auto;
+  border: 1px solid black;
+  background-color: #d7e7c3;
+  color: black;
+  border-radius: 5px;
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.article-image {
+  overflow: auto;
+  width: 370px;
+  height: 140px;
+  position: absolute;
+  top: 20px;
+  /* 10px dari tepi atas .main-content */
+  right: 10px;
+  /* 10px dari tepi kanan .main-content */
+}
+
+.sidebar {
+  position: relative;
+  width: 80%;
+  height: max-content;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #d7e7c3;
+  color: black;
+  text-align: justify;
+  font-size: 0.8rem;
+  line-height: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+}
+
+.sidebar h3 {
+  font-size: 1rem;
+  /* font-weight:; */
+}
+
+span {
+  color: black;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+span:hover {
+  color: whitesmoke;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
+  background-color: #8c5383;
+  color: whitesmoke;
+}
+
+#backToTopBtn {
+  display: none;
+  /* Sembunyikan tombol secara default */
+  position: fixed;
+  /* Posisi tombol tetap di layar */
+  bottom: 20px;
+  /* Jarak dari bawah layar */
+  right: 20px;
+  /* Jarak dari kanan layar */
+  z-index: 99;
+  /* Pastikan tombol berada di atas elemen lain */
+  font-size: 18px;
+  /* Ukuran font ikon */
+  border: none;
+  /* Hilangkan border */
+  outline: none;
+  /* Hilangkan outline saat di-klik */
+  background-color: #8c5383;
+  /* Warna latar belakang tombol */
+  color: white;
+  /* Warna teks/ikon tombol */
+  cursor: pointer;
+  /* Ubah kursor menjadi pointer saat diarahkan */
+  padding: 15px 20px;
+  /* Padding tombol */
+  border-radius: 5px;
+  /* Sudut melengkung pada tombol */
+  transition: opacity 0.3s;
+  /* Animasi transisi saat muncul/hilang */
+}
+
+#backToTopBtn:hover {
+  background-color: #8a397e;
+  /* Warna latar belakang saat di-hover */
+}

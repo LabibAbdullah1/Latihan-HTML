@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- style css dan javascrip -->
+   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+   <link type="module" src="/node_modules/bootstrap/dist/js/bootstrap.min.js">
+
+   <!-- title -->
+   <title>Tugas Pertemuan 11</title>
+</head>
+
+<body>
+   <div class="container mt-5">
+      <h1 class="text-center mb-3">Form Pengeisian Data Diri</h1>
+      <!-- form  -->
+      <form action="">
+         <!-- input Nama -->
+         <div class="mb-3">
+            <label for="inputNama" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" name="inputNama" id="inputNama"
+               placeholder="Masukkan nama lengkap kamu" required />
+         </div>
+
+         <!-- input email -->
+         <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="text" class="form-control" name="inputEmail" id="inputEmail" placeholder="email@example.com"
+               required />
+         </div>
+
+         <!-- select Pekerjaan -->
+         <div class="mb-3">
+            <label for="inputSelect">Pekerjaan</label>
+            <select name="inputSelect" id="inputSelect" class="form-select" required>
+               <option hidden>Silahkan Pilih Pekerjaan</option>
+               <!-- Pendidikan -->
+               <option value="Mahasiswa">Mahasiswa</option>
+               <option value="Dosen">Dosen</option>
+               <option value="Guru">Guru</option>
+               <option value="Tenaga Pendidik">Tenaga Pendidik</option>
+               <option value="Staff Tata Usaha">Staff Tata Usaha</option>
+
+               <!-- Kesehatan -->
+               <option value="Dokter">Dokter</option>
+               <option value="Perawat">Perawat</option>
+               <option value="Apoteker">Apoteker</option>
+               <option value="Bidan">Bidan</option>
+               <option value="Tenaga Medis Lainnya">Tenaga Medis Lainnya</option>
+
+               <!-- Teknologi & Informasi -->
+               <option value="Programmer">Programmer</option>
+               <option value="Web Developer">Web Developer</option>
+               <option value="Mobile Developer">Mobile Developer</option>
+               <option value="UI/UX Designer">UI/UX Designer</option>
+               <option value="IT Support">IT Support</option>
+               <option value="Data Analyst">Data Analyst</option>
+               <option value="Network Engineer">Network Engineer</option>
+
+               <!-- Administrasi & Perkantoran -->
+               <option value="Sekretaris">Sekretaris</option>
+               <option value="Staff Administrasi">Staff Administrasi</option>
+               <option value="Manajer">Manajer</option>
+               <option value="Direktur">Direktur</option>
+               <option value="Akuntan">Akuntan</option>
+               <option value="HRD">HRD</option>
+
+               <!-- Industri & Konstruksi -->
+               <option value="Teknisi">Teknisi</option>
+               <option value="Operator Mesin">Operator Mesin</option>
+               <option value="Pekerja Pabrik">Pekerja Pabrik</option>
+               <option value="Arsitek">Arsitek</option>
+               <option value="Kontraktor">Kontraktor</option>
+               <option value="Kuli Bangunan">Kuli Bangunan</option>
+
+               <!-- Transportasi -->
+               <option value="Driver">Driver</option>
+               <option value="Sopir Angkutan">Sopir Angkutan</option>
+               <option value="Pilot">Pilot</option>
+               <option value="Masinis">Masinis</option>
+               <option value="Nakhoda Kapal">Nakhoda Kapal</option>
+
+               <!-- Keamanan -->
+               <option value="Security">Security</option>
+               <option value="Satpol PP">Satpol PP</option>
+               <option value="Polisi">Polisi</option>
+               <option value="Tentara">Tentara</option>
+               <option value="Pemadam Kebakaran">Pemadam Kebakaran</option>
+
+               <!-- Wirausaha & Lainnya -->
+               <option value="Wiraswasta">Wiraswasta</option>
+               <option value="Pedagang">Pedagang</option>
+               <option value="Petani">Petani</option>
+               <option value="Peternak">Peternak</option>
+               <option value="Nelayan">Nelayan</option>
+               <option value="Seniman">Seniman</option>
+               <option value="Musisi">Musisi</option>
+               <option value="Atlet">Atlet</option>
+               <option value="Content Creator">Content Creator</option>
+               <option value="Fotografer">Fotografer</option>
+               <option value="Videografer">Videografer</option>
+               <option value="Jurnalis">Jurnalis</option>
+               <option value="Penulis">Penulis</option>
+               <option value="Pekerja Lepas (Freelancer)">Pekerja Lepas (Freelancer)</option>
+
+               <!-- Lain-lain -->
+               <option value="Ibu Rumah Tangga">Ibu Rumah Tangga</option>
+               <option value="Tidak Bekerja">Tidak Bekerja</option>
+               <option value="Lainnya">Lainnya</option>
+            </select>
+         </div>
+
+         <!-- Jenis Kelamin -->
+         <div class="mb-3">
+            <label>Jenis Kelamin</label>
+            <div class="form-check">
+               <input type="radio" id="radioDefault" name="inputRadio" class="form-check-input" checked>
+               <label for="radioDefault" class="form-check-label text-warning">Laki - laki</label>
+            </div>
+            <div class="form-check">
+               <input type="radio" id="radioCheked" name="inputRadio" class="form-check-input">
+               <label for="radioChecked" class="form-check-label text-primary">Perempuan</label>
+            </div>
+         </div>
+
+         <!-- text area Alamat -->
+         <div class="mb-3">
+            <label for="textArea">Alamat</label>
+            <textarea name="textArea" id="textArea" rows="10" class="form-control">
+            </textarea>
+         </div>
+
+         <div class=" mb-3">
+            <button id="kirim" type="submit" class="btn btn-primary w-100">Kirim</button>
+         </div>
+      </form>
+   </div>
+
+
+</body>
+
+</html>

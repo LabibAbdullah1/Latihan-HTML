@@ -1,0 +1,89 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.item {
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+  width: calc(33.33% - 20px);
+  max-width: 400px;
+}
+
+.item-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.item-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Latar belakang semi-transparan */
+  display: none;
+  /* Awalnya disembunyikan */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Pastikan overlay berada di atas elemen lain */
+  cursor: pointer;
+}
+
+#fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  /* Memastikan gambar tidak terpotong */
+}
+
+/* Media query untuk layar ekstra kecil (1 kolom) */
+@media (max-width: 599px) {
+  .item {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Media query untuk layar kecil hingga sedang (2 kolom) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .item {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Media query untuk layar sedang hingga besar (3 kolom) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .item {
+    width: calc(33.33% - 20px);
+  }
+}
+
+/* Media query untuk layar desktop (4 kolom) */
+@media (min-width: 1200px) {
+  .item {
+    width: calc(25% - 20px);
+  }
+}
