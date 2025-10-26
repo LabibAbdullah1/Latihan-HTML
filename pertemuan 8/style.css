@@ -4,13 +4,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0a1a76;
-  /* background: linear-gradient(to bottom, #182248 50%, #7d8deb 100%); */
   background-image:
     radial-gradient(ellipse at left, #5c73c7 0%, transparent 70%),
-    /* Gradien di sisi kiri */
     radial-gradient(ellipse at right, #6879c0 0%, transparent 70%);
-  /* Gradien di sisi kanan */
-
   color: #f0f0f0;
 
 }
