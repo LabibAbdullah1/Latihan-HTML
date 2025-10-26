@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/node_modules/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+      <title>Navbar and Footer</title>
+      <style>
+            body {
+                  height: 200vh;
+                  display: flex;
+                  flex-direction: column;
+            }
+
+            .main {
+                  margin: 0;
+                  margin-top: 50px;
+
+            }
+
+            img {
+                  max-height: 600px;
+                  object-fit: cover;
+            }
+      </style>
+</head>
+
+<body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Bubsz.com</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="b bi-list"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                              <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#about">Tentang kami</a></li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                          data-bs-toggle="dropdown">
+                                          Lainnya
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                                          <li><a class="dropdown-item" href="#support">Dukungan</a></li>
+                                    </ul>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+      </nav>
+
+      <div class="container-fluid main">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                        <div class="carousel-item active">
+                              <img src="https://images2.alphacoders.com/788/thumb-1920-788976.jpg" class="d-block w-100"
+                                    alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <h5>Background Anime Keren</h5>
+                                    <p>Gambar ini menampilkan latar belakang anime yang indah dengan warna-warna cerah
+                                          dan
+                                          suasana yang menenangkan.</p>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <img src="https://wallpapers.com/images/hd/japan-anime-purple-view-pw1tidupjvhyyyhg.jpg"
+                                    class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <h5>Background Anime Sunset</h5>
+                                    <p>Gambar ini menampilkan latar belakang anime dengan pemandangan matahari terbenam
+                                          yang indah dan suasana yang tenang.</p>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9c2e9d59-ee54-490e-bf96-5497f587844f/dgk7fry-b64b56d9-3eac-42df-a295-5877422ba663.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85YzJlOWQ1OS1lZTU0LTQ5MGUtYmY5Ni01NDk3ZjU4Nzg0NGYvZGdrN2ZyeS1iNjRiNTZkOS0zZWFjLTQyZGYtYTI5NS01ODc3NDIyYmE2NjMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yg97Gu7a_P0DPXbatK1t6tBqI75aCJ6XZ-bP1rfP20M"
+                                    class="d-block w-100" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                    <h5>Background Anime Keren</h5>
+                                    <p>Gambar ini menampilkan latar belakang anime yang indah dengan warna-warna cerah
+                                          dan
+                                          suasana yang menenangkan.</p>
+                              </div>
+                        </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                  </button>
+            </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-dark text-light pt-5 pb-2 mt-auto">
+            <div class="container text-center text-md-start">
+                  <div class="row text-center text-md-start">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Bubsz.com</h5>
+                              <p>Platform edukasi online yang menyediakan berbagai kursus berkualitas untuk pengembangan
+                                    diri dan karier.</p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Produk</h5>
+                              <p><a href="#" class="text-light text-decoration-none">Kursus Online</a></p>
+                              <p><a href="#" class="text-light text-decoration-none">Webinar</a></p>
+                              <p><a href="#" class="text-light text-decoration-none">E-book</a></p>
+                              <p><a href="#" class="text-light text-decoration-none">Sertifikasi</a></p>
+                        </div>
+
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Tautan Berguna</h5>
+                              <p><a href="#" class="text-light text-decoration-none">Beranda</a></p>
+                              <p><a href="#about" class="text-light text-decoration-none">Tentang Kami</a></p>
+                              <p><a href="#faq" class="text-light text-decoration-none">FAQ</a></p>
+                              <p><a href="#support" class="text-light text-decoration-none">Dukungan</a></p>
+                        </div>
+
+                        <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-3">
+                              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Kontak</h5>
+                              <p><i class="bi bi-house-door-fill me-3"></i> Jl. Pendidikan No. 123, Jakarta
+                              </p>
+                              <p><i class="bi bi-envelope-fill me-3"></i> info@bubsz.com</p>
+                              <p><i class="bi bi-phone-fill me-3"></i> +62 21 1234 5678</p>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+
+      <script src="/node_modules/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
